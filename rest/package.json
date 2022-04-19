@@ -1,0 +1,32 @@
+{
+  "name": "latteishorse",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyshr/latteishorse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyshr/latteishorse/issues"
+  },
+  "homepage": "https://github.com/skyshr/latteishorse#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "multer": "^1.4.3",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.2",
+    "qs": "^6.10.1",
+    "sync-mysql": "^3.0.1"
+  }
+}

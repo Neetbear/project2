@@ -1,0 +1,25 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title &#xB85C;&#xADF8;&#xC778;
+  link(rel='stylesheet', type='text/css', href='./css/signupLoginPopup.css')
+.signupPopupContainer
+  .signupPopupBox
+    form(action='login', method='POST')
+      div
+        .mainTitle(style='margin-top: 25px;')
+          | &#xB85C;&#xADF8;&#xC778;
+        .signupInputBox.loginMarginTop
+          .signupSubTitle
+            label(for='userid') ID : 
+          .signupInput
+            input#userid(name='id', require='', placeholder='ID를 입력하세요')
+        .signupInputBox.loginMarginTop
+          .signupSubTitle
+            label(for='pwd') &#xBE44;&#xBC00;&#xBC88;&#xD638; : 
+          .signupInput
+            input#pwd(name='pwd', type='password', require='', placeholder='비밀번호를 입력하세요')
+      .signUpBtnBox.loginMarginTop
+        button#logInBtn.signUpBtn(type='submit') &#xB85C;&#xADF8;&#xC778;

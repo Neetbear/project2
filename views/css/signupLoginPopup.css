@@ -1,0 +1,81 @@
+:root {
+    --navText-color: rgb(226, 164, 71);
+    --titleColor-color: rgb(105, 102, 102);
+}
+
+.signupPopupContainer {
+    width: 470px; 
+    height: 300px; 
+    /* background-color: red;  */
+    background-color: rgba(5, 0, 71, 0.137);
+    border-radius: 25px;
+    display:table; 
+    padding: 15px;
+}
+.signupPopupBox {
+    /* background-color: yellow;  */
+    border: 3px solid rgb(226, 164, 71); 
+    border-radius: 15px; 
+
+    display: table-cell;
+    text-align: center;
+}
+.signupInputBox {
+    /* background-color: rgb(218, 60, 60); */
+    margin-top: 5px;
+}
+.mainTitle {
+    /* background-color: whitesmoke; */
+    color: var(--titleColor-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 150%;
+    font-weight: 650;
+    /* display: inline-block; */
+}
+
+.signupSubTitle {
+    /* background-color: tomato; */
+    color: var(--titleColor-color);
+    font-weight: 700;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border-bottom: 2px solid var(--navText-color);;
+    /* text-align: right; */
+    text-align: center;
+    margin-right: 15px;
+    /* float: left;     */
+}
+.signupInput {
+    /* background-color: violet; */
+    border-bottom: px solid var(--navText-color);;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+.signUpBtnBox {
+    /* background-color: blue; */
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    display: inline-block;
+    line-height: 30px;
+}
+.signUpBtn {
+    background-color: var(--navText-color);
+    border-radius: 10px;
+    color: white;
+    font-size: 100%;
+    font-weight: 800;
+    width: 120px;
+    height: 35px;
+    border: none;
+}
+
+.loginMarginTop {
+    margin-top: 32px;
+}

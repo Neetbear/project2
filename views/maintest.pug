@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Test
+        script(src='./js/maintest.js' defer)
+    body
+        if(!loginstate)
+            br
+            b
+                p(size='5' color='gray') 회원가입 및 로그인
+            br
+            br
+            input(type='button' value='회원가입' id='signup')
+            input(type='button' value='로그인' id='login')
+
+        if(loginstate == "okay")
+            br
+            b
+                p(size='5' color='gray') 로그인 성공
+            br
+            dir #{id} 님이 로그인하셨습니다.
+            form(id="logoutbtn" action='/logout' method='POST')
+                button#logoutBtn(type='submit') 로그아웃
+        

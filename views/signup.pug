@@ -1,0 +1,52 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title &#xD68C;&#xC6D0;&#xAC00;&#xC785;
+  script(src='/js/signup.js', defer='')
+  script(src='//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js')
+  link(rel='stylesheet', type='text/css', href='./css/signupLoginPopup.css')
+.signupPopupContainer
+  .signupPopupBox
+    form#signupSubmit(action='/signup', method='POST')
+      div
+        .mainTitle
+          | &#xD68C;&#xC6D0;&#xAC00;&#xC785;
+        .signupInputBox
+          .signupSubTitle
+            label(for='userid') ID : 
+          .signupInput
+            input#userid(name='id', type='text', require='', placeholder='ID를 입력하세요', checkresult='fail')
+        .signupInputBox
+          .signupSubTitle
+            label(for='pwd') &#xBE44;&#xBC00;&#xBC88;&#xD638; : 
+          .signupInput
+            input#pwd(name='password', type='password', require='', placeholder='비밀번호를 입력하세요')
+        .signupInputBox
+          .signupSubTitle
+            label(for='checkPwd') &#xBE44;&#xBC00;&#xBC88;&#xD638; &#xD655;&#xC778; : 
+          .signupInput
+            input#checkPwd(type='password', require='', placeholder='비밀번호를 입력하세요')
+        .signupInputBox
+          .signupSubTitle
+            label(for='username') &#xC774;&#xB984; : 
+          .signupInput
+            input#username(name='username', require='', placeholder='이름을 입력하세요')
+        .signupInputBox
+          .signupSubTitle
+            label(for='email') &#xC774;&#xBA54;&#xC77C; : 
+          .signupInput
+            input#email(name='email', require='', placeholder='이메일을 입력하세요')
+        .signupInputBox
+          .signupSubTitle
+            label(for='addr') &#xC8FC;&#xC18C; :
+          .signupInput
+            input#addr(name='address', type='text', require='', placeholder='주소를 입력하세요', readonly='')
+        .signupInputBox
+          .signupSubTitle
+            label(for='addrDet') &#xC0C1;&#xC138; &#xC8FC;&#xC18C; : 
+          .signupInput
+            input#addrDet(name='addressdet', require='', placeholder='상세 주소를 입력하세요')
+      .signUpBtnBox
+        button#signUpBtn.signUpBtn(type='submit') &#xD68C;&#xC6D0;&#xAC00;&#xC785;

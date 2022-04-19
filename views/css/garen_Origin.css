@@ -1,0 +1,49 @@
+.main-container {
+    background-color: aqua;
+    display: flex;
+    width: 1000px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15%;
+}
+.content-container {
+    margin: auto;
+    padding: auto;
+    padding-bottom: 3%;
+}
+img {
+    width: 270px;
+    height: auto;
+}
+.liner {
+    width: 90%;
+    display: flex;
+    padding: auto;
+    padding-bottom: 1%;
+}
+
+.buy {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-box {
+    position: relative;
+    left: 13%;
+    padding: auto;
+    margin: auto;
+    /* background-color: blue; */
+}
+.money-icon {
+    width: 13px;
+    height: auto;
+    padding-right: 1%;
+}
+
+#test {
+    margin-left: 8%;
+}

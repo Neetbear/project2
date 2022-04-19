@@ -1,0 +1,1042 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Test
+  style.
+    .champion {
+    //- background-color: violet;
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    //- margin-left: 13%;
+    margin-top: 7%;
+    border: 2px solid rgb(226, 164, 71);
+    //- background-image: url('./img/wallpaper1.jpg')
+    }
+    .line_seperator {
+    //- background-color: yellowgreen;
+    display: flex;
+    justify-content: flex-start;
+    }
+    .main-container {
+    //- background-color: tomato;
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    button {
+    margin: auto;
+    margin-bottom: 3%;
+    width: 70px;
+    height: 30px;
+    font-weight: 500;
+    //- padding: auto;
+    }
+    a {
+    margin: auto;
+    }
+    .test {
+    margin: auto;
+    padding-bottom: 7px;
+    font-size: 0.7rem;
+    }
+    .t1 {
+    margin: auto;
+    visibility: hidden;
+    }
+    .champname {
+    margin: auto;
+    font-weight: 550;
+    }
+    img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    }
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+
+header 
+  include ./header.pug
+
+include ./infoBox.pug
+.champion
+  .line_seperator
+    form(action='/', method='get')
+      button.line(type='submit') &#xC804;&#xCCB4;
+      button.line(type='submit') &#xD0D1;
+      button.line(type='submit') &#xC815;&#xAE00;
+      button.line(type='submit') &#xBBF8;&#xB4DC;
+      button.line(type='submit') &#xC6D0;&#xB51C;
+      button.line(type='submit') &#xC11C;&#xD3FF;
+  .main-container
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Garen', method='get')
+            img.imgicon(src='./img/iconimg/Garen.png')
+        .champname &#xAC00;&#xB80C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Galio', method='get')
+            img.imgicon(src='./img/iconimg/Galio.png')
+        .champname &#xAC08;&#xB9AC;&#xC624;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Gangplank', method='get')
+            img.imgicon(src='./img/iconimg/Gangplank.png')
+        .champname &#xAC31;&#xD50C;&#xB7AD;&#xD06C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Gragas', method='get')
+            img.imgicon(src='./img/iconimg/Gragas.png')
+        .champname &#xADF8;&#xB77C;&#xAC00;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Graves', method='get')
+            img.imgicon(src='./img/iconimg/Graves.png')
+        .champname &#xADF8;&#xB808;&#xC774;&#xBE0C;&#xC988;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Gwen', method='get')
+            img.imgicon(src='./img/iconimg/Gwen.png')
+        .champname &#xADF8;&#xC6EC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Gnar', method='get')
+            img.imgicon(src='./img/iconimg/Gnar.png')
+        .champname &#xB098;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nami', method='get')
+            img.imgicon(src='./img/iconimg/Nami.png')
+        .champname &#xB098;&#xBBF8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nasus', method='get')
+            img.imgicon(src='./img/iconimg/Nasus.png')
+        .champname &#xB098;&#xC11C;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nautilus', method='get')
+            img.imgicon(src='./img/iconimg/Nautilus.png')
+        .champname &#xB178;&#xD2F8;&#xB7EC;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nocturne', method='get')
+            img.imgicon(src='./img/iconimg/Nocturne.png')
+        .champname &#xB179;&#xD134;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nunu', method='get')
+            img.imgicon(src='./img/iconimg/Nunu.png')
+        .champname &#xB204;&#xB204;&#xC640; &#xC70C;&#xB7FC;&#xD504;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Nidalee', method='get')
+            img.imgicon(src='./img/iconimg/Nidalee.png')
+        .champname &#xB2C8;&#xB2EC;&#xB9AC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Neeko', method='get')
+            img.imgicon(src='./img/iconimg/Neeko.png')
+        .champname &#xB2C8;&#xCF54;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Darius', method='get')
+            img.imgicon(src='./img/iconimg/Darius.png')
+        .champname &#xB2E4;&#xB9AC;&#xC6B0;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Diana', method='get')
+            img.imgicon(src='./img/iconimg/Diana.png')
+        .champname &#xB2E4;&#xC774;&#xC560;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Draven', method='get')
+            img.imgicon(src='./img/iconimg/Draven.png')
+        .champname &#xB4DC;&#xB808;&#xC774;&#xBE10;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ryze', method='get')
+            img.imgicon(src='./img/iconimg/Ryze.png')
+        .champname &#xB77C;&#xC774;&#xC988;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Rakan', method='get')
+            img.imgicon(src='./img/iconimg/Rakan.png')
+        .champname &#xB77C;&#xCE78;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Rammus', method='get')
+            img.imgicon(src='./img/iconimg/Rammus.png')
+        .champname &#xB78C;&#xBA38;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Lux', method='get')
+            img.imgicon(src='./img/iconimg/Lux.png')
+        .champname &#xB7ED;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Rumble', method='get')
+            img.imgicon(src='./img/iconimg/Rumble.png')
+        .champname &#xB7FC;&#xBE14;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Renekton', method='get')
+            img.imgicon(src='./img/iconimg/Renekton.png')
+        .champname &#xB808;&#xB125;&#xD1A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Leona', method='get')
+            img.imgicon(src='./img/iconimg/Leona.png')
+        .champname &#xB808;&#xC624;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/RekSai', method='get')
+            img.imgicon(src='./img/iconimg/RekSai.png')
+        .champname &#xB809;&#xC0AC;&#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Rell', method='get')
+            img.imgicon(src='./img/iconimg/Rell.png')
+        .champname &#xB810;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Rengar', method='get')
+            img.imgicon(src='./img/iconimg/Rengar.png')
+        .champname &#xB81D;&#xAC00;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Lucian', method='get')
+            img.imgicon(src='./img/iconimg/Lucian.png')
+        .champname &#xB8E8;&#xC2DC;&#xC548;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Lulu', method='get')
+            img.imgicon(src='./img/iconimg/Lulu.png')
+        .champname &#xB8F0;&#xB8E8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Leblanc', method='get')
+            img.imgicon(src='./img/iconimg/Leblanc.png')
+        .champname &#xB974;&#xBE14;&#xB791;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/LeeSin', method='get')
+            img.imgicon(src='./img/iconimg/LeeSin.png')
+        .champname &#xB9AC; &#xC2E0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Riven', method='get')
+            img.imgicon(src='./img/iconimg/Riven.png')
+        .champname &#xB9AC;&#xBE10;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Lissandra', method='get')
+            img.imgicon(src='./img/iconimg/Lissandra.png')
+        .champname &#xB9AC;&#xC0B0;&#xB4DC;&#xB77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Lillia', method='get')
+            img.imgicon(src='./img/iconimg/Lillia.png')
+        .champname &#xB9B4;&#xB9AC;&#xC544;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/MasterYi', method='get')
+            img.imgicon(src='./img/iconimg/MasterYi.png')
+        .champname &#xB9C8;&#xC2A4;&#xD130; &#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Maokai', method='get')
+            img.imgicon(src='./img/iconimg/Maokai.png')
+        .champname &#xB9C8;&#xC624;&#xCE74;&#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Malzahar', method='get')
+            img.imgicon(src='./img/iconimg/Malzahar.png')
+        .champname &#xB9D0;&#xC790;&#xD558;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Malphite', method='get')
+            img.imgicon(src='./img/iconimg/Malphite.png')
+        .champname &#xB9D0;&#xD30C;&#xC774;&#xD2B8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Mordekaiser', method='get')
+            img.imgicon(src='./img/iconimg/Mordekaiser.png')
+        .champname &#xBAA8;&#xB370;&#xCE74;&#xC774;&#xC800;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Morgana', method='get')
+            img.imgicon(src='./img/iconimg/Morgana.png')
+        .champname &#xBAA8;&#xB974;&#xAC00;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/DrMundo', method='get')
+            img.imgicon(src='./img/iconimg/DrMundo.png')
+        .champname &#xBB38;&#xB3C4; &#xBC15;&#xC0AC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/MissFortune', method='get')
+            img.imgicon(src='./img/iconimg/MissFortune.png')
+        .champname &#xBBF8;&#xC2A4; &#xD3EC;&#xCE08;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Bard', method='get')
+            img.imgicon(src='./img/iconimg/Bard.png')
+        .champname &#xBC14;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Varus', method='get')
+            img.imgicon(src='./img/iconimg/Varus.png')
+        .champname &#xBC14;&#xB8E8;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Vi', method='get')
+            img.imgicon(src='./img/iconimg/Vi.png')
+        .champname &#xBC14;&#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Veigar', method='get')
+            img.imgicon(src='./img/iconimg/Veigar.png')
+        .champname &#xBCA0;&#xC774;&#xAC00;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Vayne', method='get')
+            img.imgicon(src='./img/iconimg/Vayne.png')
+        .champname &#xBCA0;&#xC778;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Vex', method='get')
+            img.imgicon(src='./img/iconimg/Vex.png')
+        .champname &#xBCA1;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Velkoz', method='get')
+            img.imgicon(src='./img/iconimg/Velkoz.png')
+        .champname &#xBCA8;&#xCF54;&#xC988;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Volibear', method='get')
+            img.imgicon(src='./img/iconimg/Volibear.png')
+        .champname &#xBCFC;&#xB9AC;&#xBCA0;&#xC5B4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Braum', method='get')
+            img.imgicon(src='./img/iconimg/Braum.png')
+        .champname &#xBE0C;&#xB77C;&#xC6C0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Brand', method='get')
+            img.imgicon(src='./img/iconimg/Brand.png')
+        .champname &#xBE0C;&#xB79C;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Vladimir', method='get')
+            img.imgicon(src='./img/iconimg/Vladimir.png')
+        .champname &#xBE14;&#xB77C;&#xB514;&#xBBF8;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Blitzcrank', method='get')
+            img.imgicon(src='./img/iconimg/Blitzcrank.png')
+        .champname &#xBE14;&#xB9AC;&#xCE20;&#xD06C;&#xB7AD;&#xD06C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Viego', method='get')
+            img.imgicon(src='./img/iconimg/Viego.png')
+        .champname &#xBE44;&#xC5D0;&#xACE0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Viktor', method='get')
+            img.imgicon(src='./img/iconimg/Viktor.png')
+        .champname &#xBE45;&#xD1A0;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Poppy', method='get')
+            img.imgicon(src='./img/iconimg/Poppy.png')
+        .champname &#xBF40;&#xC090;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Samira', method='get')
+            img.imgicon(src='./img/iconimg/Samira.png')
+        .champname &#xC0AC;&#xBBF8;&#xB77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sion', method='get')
+            img.imgicon(src='./img/iconimg/Sion.png')
+        .champname &#xC0AC;&#xC774;&#xC628;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sylas', method='get')
+            img.imgicon(src='./img/iconimg/Sylas.png')
+        .champname &#xC0AC;&#xC77C;&#xB7EC;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Shaco', method='get')
+            img.imgicon(src='./img/iconimg/Shaco.png')
+        .champname &#xC0E4;&#xCF54;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Senna', method='get')
+            img.imgicon(src='./img/iconimg/Senna.png')
+        .champname &#xC138;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Seraphine', method='get')
+            img.imgicon(src='./img/iconimg/Seraphine.png')
+        .champname &#xC138;&#xB77C;&#xD540;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sejuani', method='get')
+            img.imgicon(src='./img/iconimg/Sejuani.png')
+        .champname &#xC138;&#xC8FC;&#xC544;&#xB2C8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sett', method='get')
+            img.imgicon(src='./img/iconimg/Sett.png')
+        .champname &#xC138;&#xD2B8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sona', method='get')
+            img.imgicon(src='./img/iconimg/Sona.png')
+        .champname &#xC18C;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Soraka', method='get')
+            img.imgicon(src='./img/iconimg/Soraka.png')
+        .champname &#xC18C;&#xB77C;&#xCE74;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Shen', method='get')
+            img.imgicon(src='./img/iconimg/Shen.png')
+        .champname &#xC254;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Shyvana', method='get')
+            img.imgicon(src='./img/iconimg/Shyvana.png')
+        .champname &#xC26C;&#xBC14;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Swain', method='get')
+            img.imgicon(src='./img/iconimg/Swain.png')
+        .champname &#xC2A4;&#xC6E8;&#xC778;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Skarner', method='get')
+            img.imgicon(src='./img/iconimg/Skarner.png')
+        .champname &#xC2A4;&#xCE74;&#xB108;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Sivir', method='get')
+            img.imgicon(src='./img/iconimg/Sivir.png')
+        .champname &#xC2DC;&#xBE44;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/XinZhao', method='get')
+            img.imgicon(src='./img/iconimg/XinZhao.png')
+        .champname &#xC2E0; &#xC9DC;&#xC624;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Syndra', method='get')
+            img.imgicon(src='./img/iconimg/Syndra.png')
+        .champname &#xC2E0;&#xB4DC;&#xB77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Singed', method='get')
+            img.imgicon(src='./img/iconimg/Singed.png')
+        .champname &#xC2E0;&#xC9C0;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Thresh', method='get')
+            img.imgicon(src='./img/iconimg/Thresh.png')
+        .champname &#xC4F0;&#xB808;&#xC26C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ahri', method='get')
+            img.imgicon(src='./img/iconimg/Ahri.png')
+        .champname &#xC544;&#xB9AC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Amumu', method='get')
+            img.imgicon(src='./img/iconimg/Amumu.png')
+        .champname &#xC544;&#xBB34;&#xBB34;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/AurelionSol', method='get')
+            img.imgicon(src='./img/iconimg/AurelionSol.png')
+        .champname &#xC544;&#xC6B0;&#xB810;&#xB9AC;&#xC628; &#xC194;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ivern', method='get')
+            img.imgicon(src='./img/iconimg/Ivern.png')
+        .champname &#xC544;&#xC774;&#xBC88;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Azir', method='get')
+            img.imgicon(src='./img/iconimg/Azir.png')
+        .champname &#xC544;&#xC9C0;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Akali', method='get')
+            img.imgicon(src='./img/iconimg/Akali.png')
+        .champname &#xC544;&#xCE7C;&#xB9AC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Akshan', method='get')
+            img.imgicon(src='./img/iconimg/Akshan.png')
+        .champname &#xC544;&#xD06C;&#xC0E8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Aatrox', method='get')
+            img.imgicon(src='./img/iconimg/Aatrox.png')
+        .champname &#xC544;&#xD2B8;&#xB85D;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Aphelios', method='get')
+            img.imgicon(src='./img/iconimg/Aphelios.png')
+        .champname &#xC544;&#xD3A0;&#xB9AC;&#xC624;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Alistar', method='get')
+            img.imgicon(src='./img/iconimg/Alistar.png')
+        .champname &#xC54C;&#xB9AC;&#xC2A4;&#xD0C0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Annie', method='get')
+            img.imgicon(src='./img/iconimg/Annie.png')
+        .champname &#xC560;&#xB2C8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Anivia', method='get')
+            img.imgicon(src='./img/iconimg/Anivia.png')
+        .champname &#xC560;&#xB2C8;&#xBE44;&#xC544;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ashe', method='get')
+            img.imgicon(src='./img/iconimg/Ashe.png')
+        .champname &#xC560;&#xC26C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Yasuo', method='get')
+            img.imgicon(src='./img/iconimg/Yasuo.png')
+        .champname &#xC57C;&#xC2A4;&#xC624;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ekko', method='get')
+            img.imgicon(src='./img/iconimg/Ekko.png')
+        .champname &#xC5D0;&#xCF54;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Elise', method='get')
+            img.imgicon(src='./img/iconimg/Elise.png')
+        .champname &#xC5D8;&#xB9AC;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/MonkeyKing', method='get')
+            img.imgicon(src='./img/iconimg/MonkeyKing.png')
+        .champname &#xC624;&#xACF5;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ornn', method='get')
+            img.imgicon(src='./img/iconimg/Ornn.png')
+        .champname &#xC624;&#xB978;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Orianna', method='get')
+            img.imgicon(src='./img/iconimg/Orianna.png')
+        .champname &#xC624;&#xB9AC;&#xC544;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Olaf', method='get')
+            img.imgicon(src='./img/iconimg/Olaf.png')
+        .champname &#xC62C;&#xB77C;&#xD504;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Yone', method='get')
+            img.imgicon(src='./img/iconimg/Yone.png')
+        .champname &#xC694;&#xB124;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Yorick', method='get')
+            img.imgicon(src='./img/iconimg/Yorick.png')
+        .champname &#xC694;&#xB9AD;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Udyr', method='get')
+            img.imgicon(src='./img/iconimg/Udyr.png')
+        .champname &#xC6B0;&#xB514;&#xB974;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Urgot', method='get')
+            img.imgicon(src='./img/iconimg/Urgot.png')
+        .champname &#xC6B0;&#xB974;&#xACF3;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Warwick', method='get')
+            img.imgicon(src='./img/iconimg/Warwick.png')
+        .champname &#xC6CC;&#xC705;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Yuumi', method='get')
+            img.imgicon(src='./img/iconimg/Yuumi.png')
+        .champname &#xC720;&#xBBF8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Irelia', method='get')
+            img.imgicon(src='./img/iconimg/Irelia.png')
+        .champname &#xC774;&#xB810;&#xB9AC;&#xC544;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Evelynn', method='get')
+            img.imgicon(src='./img/iconimg/Evelynn.png')
+        .champname &#xC774;&#xBE14;&#xB9B0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ezreal', method='get')
+            img.imgicon(src='./img/iconimg/Ezreal.png')
+        .champname &#xC774;&#xC988;&#xB9AC;&#xC5BC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Illaoi', method='get')
+            img.imgicon(src='./img/iconimg/Illaoi.png')
+        .champname &#xC77C;&#xB77C;&#xC624;&#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/JarvanIV', method='get')
+            img.imgicon(src='./img/iconimg/JarvanIV.png')
+        .champname &#xC790;&#xB974;&#xBC18; 4&#xC138;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Xayah', method='get')
+            img.imgicon(src='./img/iconimg/Xayah.png')
+        .champname &#xC790;&#xC57C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Zyra', method='get')
+            img.imgicon(src='./img/iconimg/Zyra.png')
+        .champname &#xC790;&#xC774;&#xB77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Zac', method='get')
+            img.imgicon(src='./img/iconimg/Zac.png')
+        .champname &#xC790;&#xD06C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Janna', method='get')
+            img.imgicon(src='./img/iconimg/Janna.png')
+        .champname &#xC794;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Jax', method='get')
+            img.imgicon(src='./img/iconimg/Jax.png')
+        .champname &#xC7AD;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Zed', method='get')
+            img.imgicon(src='./img/iconimg/Zed.png')
+        .champname &#xC81C;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Xerath', method='get')
+            img.imgicon(src='./img/iconimg/Xerath.png')
+        .champname &#xC81C;&#xB77C;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Jayce', method='get')
+            img.imgicon(src='./img/iconimg/Jayce.png')
+        .champname &#xC81C;&#xC774;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Zoe', method='get')
+            img.imgicon(src='./img/iconimg/Zoe.png')
+        .champname &#xC870;&#xC774;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Ziggs', method='get')
+            img.imgicon(src='./img/iconimg/Ziggs.png')
+        .champname &#xC9C1;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Jhin', method='get')
+            img.imgicon(src='./img/iconimg/Jhin.png')
+        .champname &#xC9C4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Zilean', method='get')
+            img.imgicon(src='./img/iconimg/Zilean.png')
+        .champname &#xC9C8;&#xB9AC;&#xC5B8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Jinx', method='get')
+            img.imgicon(src='./img/iconimg/Jinx.png')
+        .champname &#xC9D5;&#xD06C;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Chogath', method='get')
+            img.imgicon(src='./img/iconimg/Chogath.png')
+        .champname &#xCD08;&#xAC00;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Karma', method='get')
+            img.imgicon(src='./img/iconimg/Karma.png')
+        .champname &#xCE74;&#xB974;&#xB9C8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Camille', method='get')
+            img.imgicon(src='./img/iconimg/Camille.png')
+        .champname &#xCE74;&#xBC00;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kassadin', method='get')
+            img.imgicon(src='./img/iconimg/Kassadin.png')
+        .champname &#xCE74;&#xC0AC;&#xB518;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Karthus', method='get')
+            img.imgicon(src='./img/iconimg/Karthus.png')
+        .champname &#xCE74;&#xC11C;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Cassiopeia', method='get')
+            img.imgicon(src='./img/iconimg/Cassiopeia.png')
+        .champname &#xCE74;&#xC2DC;&#xC624;&#xD398;&#xC544;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kaisa', method='get')
+            img.imgicon(src='./img/iconimg/Kaisa.png')
+        .champname &#xCE74;&#xC774;&#xC0AC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Khazix', method='get')
+            img.imgicon(src='./img/iconimg/Khazix.png')
+        .champname &#xCE74;&#xC9C1;&#xC2A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Katarina', method='get')
+            img.imgicon(src='./img/iconimg/Katarina.png')
+        .champname &#xCE74;&#xD0C0;&#xB9AC;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kalista', method='get')
+            img.imgicon(src='./img/iconimg/Kalista.png')
+        .champname &#xCE7C;&#xB9AC;&#xC2A4;&#xD0C0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kennen', method='get')
+            img.imgicon(src='./img/iconimg/Kennen.png')
+        .champname &#xCF00;&#xB128;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Caitlyn', method='get')
+            img.imgicon(src='./img/iconimg/Caitlyn.png')
+        .champname &#xCF00;&#xC774;&#xD2C0;&#xB9B0;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kayn', method='get')
+            img.imgicon(src='./img/iconimg/Kayn.png')
+        .champname &#xCF00;&#xC778;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kayle', method='get')
+            img.imgicon(src='./img/iconimg/Kayle.png')
+        .champname &#xCF00;&#xC77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/KogMaw', method='get')
+            img.imgicon(src='./img/iconimg/KogMaw.png')
+        .champname &#xCF54;&#xADF8;&#xBAA8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Corki', method='get')
+            img.imgicon(src='./img/iconimg/Corki.png')
+        .champname &#xCF54;&#xB974;&#xD0A4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Quinn', method='get')
+            img.imgicon(src='./img/iconimg/Quinn.png')
+        .champname &#xD038;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kled', method='get')
+            img.imgicon(src='./img/iconimg/Kled.png')
+        .champname &#xD074;&#xB808;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Qiyana', method='get')
+            img.imgicon(src='./img/iconimg/Qiyana.png')
+        .champname &#xD0A4;&#xC544;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Kindred', method='get')
+            img.imgicon(src='./img/iconimg/Kindred.png')
+        .champname &#xD0A8;&#xB4DC;&#xB808;&#xB4DC;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Taric', method='get')
+            img.imgicon(src='./img/iconimg/Taric.png')
+        .champname &#xD0C0;&#xB9AD;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Talon', method='get')
+            img.imgicon(src='./img/iconimg/Talon.png')
+        .champname &#xD0C8;&#xB860;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Taliyah', method='get')
+            img.imgicon(src='./img/iconimg/Taliyah.png')
+        .champname &#xD0C8;&#xB9AC;&#xC57C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/TahmKench', method='get')
+            img.imgicon(src='./img/iconimg/TahmKench.png')
+        .champname &#xD0D0; &#xCF04;&#xCE58;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Trundle', method='get')
+            img.imgicon(src='./img/iconimg/Trundle.png')
+        .champname &#xD2B8;&#xB7F0;&#xB4E4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Tristana', method='get')
+            img.imgicon(src='./img/iconimg/Tristana.png')
+        .champname &#xD2B8;&#xB9AC;&#xC2A4;&#xD0C0;&#xB098;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Tryndamere', method='get')
+            img.imgicon(src='./img/iconimg/Tryndamere.png')
+        .champname &#xD2B8;&#xB9B0;&#xB2E4;&#xBBF8;&#xC5B4;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/TwistedFate', method='get')
+            img.imgicon(src='./img/iconimg/TwistedFate.png')
+        .champname &#xD2B8;&#xC704;&#xC2A4;&#xD2F0;&#xB4DC; &#xD398;&#xC774;&#xD2B8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Twitch', method='get')
+            img.imgicon(src='./img/iconimg/Twitch.png')
+        .champname &#xD2B8;&#xC704;&#xCE58;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Teemo', method='get')
+            img.imgicon(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Pyke', method='get')
+            img.imgicon(src='./img/iconimg/Pyke.png')
+        .champname &#xD30C;&#xC774;&#xD06C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Pantheon', method='get')
+            img.imgicon(src='./img/iconimg/Pantheon.png')
+        .champname &#xD310;&#xD14C;&#xC628;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Fiddlesticks', method='get')
+            img.imgicon(src='./img/iconimg/Fiddlesticks.png')
+        .champname &#xD53C;&#xB4E4;&#xC2A4;&#xD2F1;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Fiora', method='get')
+            img.imgicon(src='./img/iconimg/Fiora.png')
+        .champname &#xD53C;&#xC624;&#xB77C;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Fizz', method='get')
+            img.imgicon(src='./img/iconimg/Fizz.png')
+        .champname &#xD53C;&#xC988;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Heimerdinger', method='get')
+            img.imgicon(src='./img/iconimg/Heimerdinger.png')
+        .champname &#xD558;&#xC774;&#xBA38;&#xB529;&#xAC70;
+    .test
+      .content-box
+        .img-box
+          form.form(action='/skin/Hecarim', method='get')
+            img.imgicon(src='./img/iconimg/Hecarim.png')
+        .champname &#xD5E4;&#xCE74;&#xB9BC;
+    .test
+      .t1
+        img(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+    .test
+      .t1
+        img(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+    .test
+      .t1
+        img(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+    .test
+      .t1
+        img(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+    .test
+      .t1
+        img(src='./img/iconimg/Teemo.png')
+        .champname &#xD2F0;&#xBAA8;
+script(src='https://unpkg.com/axios/dist/axios.min.js')
+script(src='./js/testFront.js')

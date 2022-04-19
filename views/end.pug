@@ -1,0 +1,53 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+    style.
+        body {
+            width: 100%;
+            height: auto;
+            background-image: url('/img/final1.png');
+            background-repeat: space;
+            //- justify-content: center;
+            //- margin: 0, auto;
+        }
+
+        .imgbox {
+            justify-content: center;
+            margin: 0, auto;
+            margin-left: 30%;
+        }
+
+        .myimage {
+            position: fixed;
+            left: 15%;
+            top: 10%;
+        }
+
+        .sjimage {
+            position: fixed;
+            right: 15%;
+            top: 10%
+        }
+
+        .compare {
+            width: 600px;
+            height: 600px;
+        }
+
+    body 
+        .myimage
+                img.compare(src='/img/skinsale1.png')
+        .sjimage 
+                img.compare(src='/img/main/nidalee.png')
+        .main-box 
+            .imgbox
+                marquee(direction="up" behavior="scroll" width="900" height="900" scrolldelay="2" scrollamount="100" loop="7")
+                    img(src='/img/final.png' width='700' height='700')
+            
+    
+            

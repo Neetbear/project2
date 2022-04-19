@@ -1,0 +1,71 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet', href='/css/index.css', type='text/css')
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+body
+  header
+    include ./header.pug
+    include ./infoBox.pug
+  
+  main
+    //- include ./infoBox.pug
+
+    section.forWheelPage
+      .sec_1_container
+        .leftPopupContainer.lefyPopupDelay
+          .leftPopupBox.lefyPopupDelay
+            div
+              form(action='/skin/Nidalee', method='get', class="formnidal")
+                img.leftPopupImg(src='./img/main/nidalee.png')
+            .leftPopupBG
+              img.leftPopupBG(src='./img/main/logoLeftPopupbg.png')
+
+        .introBox
+          .freeSkinContainer
+            .freeSkinBox.animDelay_01
+              img.freeSkinImg(src='/img/main/free_01_꿀잼 유미.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_02
+              img.freeSkinImg(src='/img/main/free_02_꼬마 악마 트리스타나.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_03
+              img.freeSkinImg(src='/img/main/free_03_기동총격여신 미스 포츈.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_04
+              img.freeSkinImg(src='/img/main/free_04_그림자 불꽃 킨드레드.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_05
+              img.freeSkinImg(src='/img/main/free_05_SKT T1 리 신.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_06
+              img.freeSkinImg(src='/img/main/free_06_KDA 이블린.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_07
+              img.freeSkinImg(src='/img/main/free_07_KDA 이블린 프레스티지 에디션.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_08
+              img.freeSkinImg(src='/img/main/free_08_KDA ALL OUT 세라핀 인디.jpg', style='width: 100%; height: 100%;')
+            .freeSkinBox.animDelay_09
+              img.freeSkinImg(src='/img/main/free_09_깊은 숲 애쉬.jpg', style='width: 100%; height: 100%;')
+          .freeSkinLogoContainer.logoAnimDelay
+            img.freeSkinImgLogo(src='/img/main/Logo_03_999x451.png')
+    section.forWheelPage
+      .sec_2_container
+        .moveAnim.freeSkin_rightIn
+          img.sec_2_sideImage.sec_2_sideImageleftSize(src='/img/main/champion_left.png')
+        .sec_2_textBoxContainer
+          .sec_2_textBox
+            .sec_2_text.moveAnim.sec_2_text_UpIn
+              | &#xCC28;&#xBCC4;&#xD654; &#xB41C;
+              br
+              |                       &#x3000;&#xB098;&#xB9CC;&#xC758; &#xC2A4;&#xD0A8;&#xC73C;&#xB85C;
+              br
+              |                       &#x3000;&#x3000;&#xC804;&#xC7A5;&#xC744; &#xC9C0;&#xBC30;&#xD558;&#xC790;.
+          .sec_2_ImgBG
+          .sec_2_imgBox
+            img.sec_2_Img(src='/img/main/challenger.png')
+        .moveAnim.freeSkin_leftIn
+          img.sec_2_sideImage.sec_2_sideImagerightSize(src='/img/main/champion_right.png')
+  div(style='position: fixed; bottom: 20px; right: 20px; font-weight: 600;')
+    a(href='#') TOP
+  script(src='./js/index.js', type='text/javascript' defer)
+  script(type='text/javascript', src='http://code.jquery.com/jquery-1.12.4.min.js')
+  //- script(src='./js/maintest.js', type='text/javascript')

@@ -1,0 +1,27 @@
+h3 {
+    color: rgb(226, 164, 71);
+}
+
+.userid {
+    color: #9b111e;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: rgb(226, 164, 71);
+    background-color: rgb(65, 64, 64);
+    border-top: 3px solid rgb(226, 164, 71);
+    border-bottom: 3px solid rgb(226, 164, 71);
+}
+
+td {
+    border-bottom: 1px solid rgb(226, 164, 71);
+}
+
+/* thead, tr, th{ background-color: rgba(128, 128, 128, 0); } */
+
+/* tr:hover { background-color: rgb(226, 164, 71); } */

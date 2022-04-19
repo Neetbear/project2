@@ -1,0 +1,49 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title #{title}
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/table.css', type='text/css')
+  link(rel='stylesheet', href='/css/boardtable.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+body
+    header 
+        include ./header.pug
+
+    include ./infoBox.pug
+    
+    main(style="text-align : center")
+        h1 #{title}
+        div
+            form(action='/board/update' method='post')
+                table(border='1')
+                    input(type='hidden' name='idx' value=rows.idx)
+                    tbody.tablecontainer
+                        tr
+                            td.boardleft 작성자
+                            td #{rows.userid}
+                        tr
+                            td.boardleft 제목
+                            td
+                                input.writeContainer#title(type='text' name='title' value=rows.title required='')
+                        tr
+                            td.boardleft 내용
+                            td
+                                textarea.writeContainer#content(name='content' cols='30' rows='10' required='') #{rows.content}
+                        tr
+                            td.boardleft 변경일
+                            td #{rows.modidate}
+                        tr
+                            td.boardleft 등록일
+                            td #{rows.regdate}
+                br        
+                div
+                    a(href='/board/page') 목록으로 돌아가기
+                if(loginstate=='okay')
+                    input.rewriteBtn(type='submit' value="글 수정")
+            if(loginstate=='okay')
+                form(action='/board/delete' method = 'post')
+                    input(type='hidden' name='idx' value=rows.idx)
+                    input.rewriteBtn(type='submit' value="글 삭제")

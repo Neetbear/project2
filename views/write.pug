@@ -1,0 +1,38 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title #{title}
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/table.css', type='text/css')
+  link(rel='stylesheet', href='/css/boardtable.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+
+body 
+    header 
+        include ./header.pug
+    
+    include ./infoBox.pug
+
+    main
+        h1.maintitle #{title}
+        form(action='/board/write' method='post')
+            table(border='1')
+                tbody
+                    tr(style)
+                        td.boardleft 작성자
+                        td #{id}
+                    tr
+                        td.boardleft 제목
+                        td
+                            input.writeContainer#title(type='text' name='title' required='' style='width:99%')
+                    tr
+                        td.boardleft 내용
+                        td
+                            textarea.writeContainer#content(name='content' cols='30' rows='10' required='' style='width:99%; resize:none')
+                    tr
+                        td(colspan='2')
+                            button.writeBtn(type='submit') 글쓰기
+
+            

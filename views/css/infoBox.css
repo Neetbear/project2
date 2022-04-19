@@ -1,0 +1,51 @@
+:root {
+    --navText-color: rgb(226, 164, 71);
+    /* --leftPopup-color: rgba(70, 70, 70, 0.61); */
+  }
+
+.infoBoxContainer {
+    /* background-color: red; */
+    width: 15vh;
+    height: 15vh;
+    top: 180px;
+    right: 15px;
+
+    padding: 3px;
+
+    display:table;
+    position: absolute;
+
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    .infoBoxContainer {
+        width: 10vh;
+        height: 10vh;
+        top: 160px;
+        right: 10px;
+        font-size: 80%;
+    }
+}
+
+.infoBox {
+    background-color: rgba(39, 39, 39);
+    border: 3px solid var(--navText-color);
+    border-radius: 50%;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.infoBoxUserID {
+    /* margin-left: 10px; */
+    text-align: center;
+    text-decoration: none;
+}
+.infoBoxUserPoint {
+    /* margin-left: 10px; */
+    text-align: center;
+    text-decoration: none;
+}
+
+.infolet {
+    color : var(--navText-color)
+}

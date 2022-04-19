@@ -1,0 +1,54 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title #{title}
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/table.css', type='text/css')
+  link(rel='stylesheet', href='/css/mypage.css', type='text/css')
+
+body(style="text-align : center")
+    header 
+        include ./header.pug
+    main
+        h1 My page
+        div 환영합니다 #{id} 소환사님
+        br
+        
+        h3 My Board
+        table(border='0')
+          thead 
+            tr 
+              th 번호
+              th 제목
+              th 조회수
+              th 수정일
+              th 등록일
+            
+            -for(var i = 0; i<rows.length; i++)
+              -if(i > rows.length) 
+                -var data = {}
+              -else var data = rows[i]
+                tr
+                  td #{data.idx}
+                  td
+                    a(href='/board/read/' + data.idx) #{data.title}
+                  td #{data.hit}
+                  td #{data.modidate}
+                  td #{data.regdate}
+        br
+
+        if (imgsrc)
+          h3 My Skin
+          table(border='0')
+            tbody
+              tr
+                -for(var i = 0; i<imgsrc.length; i++)
+                
+                  td 
+                    img(src='/'+imgsrc[i].imgsrc) 
+              tr
+                -for(var i = 0; i<imgsrc.length; i++)
+                  td #{skinname[i]}
+              

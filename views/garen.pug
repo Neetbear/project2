@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Document
+    
+  script(type='module', src='/js/front.js')
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+  link(rel='stylesheet', href='/css/garen.css', type='text/css')
+
+body
+    header 
+    include ./header.pug
+    
+    .imgBG
+        img(src= '/' + test[0].imgsrc)
+    
+    include ./infoBox.pug
+
+main
+    
+
+    .main-container
+        - for (let i=1; i<test.length; i++)
+            if (i%3==1)
+                //- .liner  
+                            
+            .content-container
+                .skin-container
+                    img(src= '/' + test[i].imgsrc)
+                .text-box #{test[i].skin}
+                .price
+                    img.money-icon(src='/img/money.png')
+                    span.point #{test[i].money}
+                //- test[i] = img/skin/Garen/Garen_0.jpg
+                form(class='form' action='/skin/'+ (test[i].imgsrc.split('/')[3]).split('.')[0], method='post')
+                    .btn-box
+                        input.buy(type='button', value='구매하기')
+                        
+        

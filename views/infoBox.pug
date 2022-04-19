@@ -1,0 +1,43 @@
+//- <<<<<<< HEAD
+//- doctype html
+//- head
+//-   meta(charset='UTF-8')
+//-   meta(http-equiv='X-UA-Compatible', content='IE=edge')
+//-   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+//-   title Document
+//-   link(rel='stylesheet', type='text/css', href='./css/infoBox.css')
+//- .infoBoxContainer
+//-   .infoBox
+//-     .infoBoxUserID
+//-       a(href="") id가 들어올곳.
+//-     br
+//-     .infoBoxUserPoint
+//-       a(href="") point가 들어올곳.
+-if (!dataPrim)
+div
+-if (dataPrim) //dataPrim 값이 null이 아니면 (로그인 했거나 마이페이지 아닌 경우)
+  .infoBoxContainer
+    .infoBox
+      .infoBoxUserID
+        //- a(href='/') #{dataPrim.id}님, 환영합니다!
+        span.infolet #{dataPrim.id}
+      br
+      .infoBoxUserPoint
+        //- a(href='/') 보유한 포인트: #{dataPrim.point}
+        span.infolet POINT : #{dataPrim.point}
+//- =======
+//- doctype html
+//- head
+//-   meta(charset='UTF-8')
+//-   meta(http-equiv='X-UA-Compatible', content='IE=edge')
+//-   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+//-   title Document
+//-   link(rel='stylesheet', type='text/css', href='./css/infoBox.css')
+//- .infoBoxContainer
+//-   .infoBox
+//-     .infoBoxUserID
+//-       a(href="") #{id}
+//-     br
+//-     .infoBoxUserPoint
+//-       a(href="") #{userpoint}
+//- >>>>>>> b815abcf2ccb248b5149500a9410aeaff41616ed

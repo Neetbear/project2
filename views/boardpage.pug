@@ -1,0 +1,68 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title #{title}
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/table.css', type='text/css')
+  link(rel='stylesheet', href='/css/boardtable.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+
+body
+    header 
+        include ./header.pug
+
+        include ./infoBox.pug
+    
+    main
+        h1.maintitle #{title}
+
+        div.tablecontainer
+            br
+            table
+                tbody
+                    tr.boardtop
+                        td.boardnum 번호
+                        td.boardid 작성자
+                        td 제목
+                        td.boardhit 조회수
+                        td.boarddate 수정일
+                        td.boarddate 등록일
+                        
+                    -for(var i = (page * page_num) - page_num; i<(page * page_num); i++)
+                        
+                        -if(i > length) 
+                            -var data = {}
+                        -else var data = rows[i]
+                            -var commentnum = comment.filter((e)=>e.board_idx==data.idx).length
+                            tr.boardlist
+                                td.boardnum #{i + 1}
+                                td.boardid #{data.userid}
+                                td
+                                    a.boardtitle(href='/board/read/' + data.idx) #{data.title}
+                                        if(commentnum!=0)
+                                            span.commentnum [#{commentnum}]
+                                td.boardhit #{data.hit}
+                                td.boarddate #{data.modidate}
+                                td.boarddate #{data.regdate}
+
+                
+                    tr
+                        td.pagenum(colspan='6')
+                            -for (var j = 0; j < rows.length / page_num; j++) 
+                                a(href='/board/page/' + (j + 1)) #{j+1}
+                                span &nbsp&nbsp
+
+                    tr
+                        td.searchform(colspan='6')
+                            form(action="/board/search/" method = "post")
+                                select(name="category")
+                                    option(value="userid") 글쓴이
+                                    option(value="title") 제목
+                                input.searchinput(name ="search" type="text" required='')
+                                input(type="submit" value="검색")
+            div.boardlink
+                if(loginstate=='okay')
+                    a(href='/board/write')
+                        button.writeBtn 글쓰기

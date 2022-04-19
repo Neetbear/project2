@@ -1,0 +1,19 @@
+.infoBoxContainer {
+    /* background-color: red; */
+    width: 20vh;
+    height: 15vh;
+    top: 200px;
+    right: 30px;
+
+    display:table;
+    position: absolute;
+}
+
+.infoBox {
+    background-color: royalblue;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    display:table-cell;
+    vertical-align:middle;
+}
+

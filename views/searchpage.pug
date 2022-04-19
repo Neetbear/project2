@@ -1,0 +1,56 @@
+doctype html
+head(lang="ko")
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title #{title}
+  link(rel='stylesheet', href='/css/header.css', type='text/css')
+  link(rel='stylesheet', href='/css/table.css', type='text/css')
+  link(rel='stylesheet', href='/css/boardtable.css', type='text/css')
+  link(rel='stylesheet', href='/css/infoBox.css', type='text/css')
+
+body
+    header 
+        include ./header.pug
+
+        include ./infoBox.pug
+    
+    main
+        h1.maintitle #{title}
+
+        div.tablecontainer
+            table(border='1')
+                tbody
+                    tr.boardtop
+                        td.boardnum 번호
+                        td.boardid 작성자
+                        td 제목
+                        td.boardhit 조회수
+                        td.boarddate 수정일
+                        td.boarddate 등록일
+                    -for(var i = 0; i<rows.length; i++)
+                        -var data = rows[i]
+                            tr.boardlist
+                                td.boardnum #{data.idx}
+                                td.boardid #{data.userid}
+                                td
+                                    a(href='/board/read/' + data.idx) #{data.title}
+                                td.boardhit #{data.hit}
+                                td.boarddate #{data.modidate}
+                                td.boarddate #{data.regdate}
+
+                
+                    tr
+                        td.pagenum(colspan='6')
+                            -for (var j = 0; j < rows.length / page_num; j++) 
+                                a(href='/board/page/' + (j + 1)) #{j+1}
+                                span &nbsp&nbsp
+
+                    tr
+                        td(colspan='6')
+                            form(action="/board/search/" method = "post")
+                                select(name="category")
+                                    option(value="userid") 글쓴이
+                                    option(value="title") 제목
+                                input.searchinput(name ="search" type="text" required='')
+                                input(type="submit" value="검색")

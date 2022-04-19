@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(12, 10, 19);
+}
+  
+a {
+text-decoration: none;
+color: var(--navText-color);
+}
+
+input, textarea {
+    background-color: rgb(12, 10, 19);
+    color: rgb(226, 164, 71);
+}
+
+
+.maintitle{
+    text-align: center;
+}
+
+.boardlink{
+    text-align: right;
+    margin-right: 22%;
+}
+
+table {
+    width:60%; 
+    margin-left:20%; 
+    margin-right:20%;
+    text-align: center;
+}
+
+table,th,td {
+    color: rgb(226, 164, 71);
+    border: 2px solid white;
+    border-collapse: collapse;
+    background-color: rgb(12, 10, 19);
+    text-align: center;
+}
+
+.boardtop{
+    height: 1.5cm;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 5px solid white;
+}
+.boardleft{
+    width: 20%;
+    height: 1.5cm;
+    font-size: 20px;
+    font-weight: 600;
+    border-right: 5px solid white;
+}
+.boardnum{
+    text-align: center;
+    width: 7%;
+}
+.boardid{
+    text-align: center;
+    width: 15%;
+}
+.boardtitle{
+    text-align: start;
+    margin-left: 5%;
+}
+.commentnum{
+    color: yellow;
+    margin-right: 5%;
+}
+.boardhit{
+    text-align: center;
+    width: 10%
+}
+.boarddate {
+    text-align: center;
+}
+.pagenum{
+    text-align: center;
+}
+.searchinput, .commentInput{
+    width: 40%;
+    background-color: rgb(54, 50, 66);
+}
+
+.likeBtn{
+    display: inline-block;
+    width: 1.5cm;
+    height: 1.5cm;
+}
+
+.commentCon{
+    width: 80%;
+    margin-left: 3%;
+    float: left;
+    overflow: hidden;
+    resize: none;
+    border: hidden;
+    font-size: 20px;
+}
+.commentDel{
+    float: right;
+}
+.titleCon{
+    border: hidden;
+    font-size: 30px;
+}
+#content{
+    font-size: 30px;
+}
+.listlink{
+    float:left;
+}
+.rewrite {
+    float: right;
+    margin-right: 5%;
+}
+.rewriteBtn, .writeBtn {
+    font-size: 20px;
+    background-color: rgb(12, 10, 19);
+    color: rgb(226, 164, 71);
+    cursor: pointer;
+}
+.commentBtn {
+    font-size: 15px;
+    cursor: pointer;
+}
+.listlike{
+    margin-right: 22%;
+    margin-left: 22%;
+}
+.like{
+    position: relative;
+    bottom: 2vh;
+    float: right;
+}
+
+.commentid {
+    width:20%;
+    font-size: 20px;
+}
+
+.tablecontainer {
+    font-size: 20px;
+}
+#title{
+    font-size: 20px;
+}
+
+.writeContainer{
+    width:99%; 
+    background-color: rgb(54, 50, 66);
+    resize:none;
+}
+
+.boardlist{
+    height: 2cm;
+    font-size: 20px;
+}
